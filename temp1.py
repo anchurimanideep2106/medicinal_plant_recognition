@@ -8,11 +8,11 @@ import pickle
 from sklearn.preprocessing import LabelEncoder
 from util1 import classify
 
-loaded_model=pickle.load(open("E:/finalmodel.pkl",'rb'))
+loaded_model=pickle.load(open("finalmodel.pkl",'rb'))
 
 
 # load class names
-encoder=joblib.load(r"E:\label_encoder_1.pkl")
+encoder=joblib.load("label_encoder_1.pkl",'rb')
 class_names=encoder.classes_
 # load_model_button = st.button("Load Model")
 # @st.cache_resource
